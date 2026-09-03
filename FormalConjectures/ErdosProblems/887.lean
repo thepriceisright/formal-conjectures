@@ -48,7 +48,7 @@ theorem erdos_887.parts.ii : ∃ K, ∀ C > (0 : ℝ), ∀ᶠ n in atTop,
 A question of Erdős and Rosenfeld, who proved that there are infinitely many $n$ with (at least)
 $4$ divisors in $(n^{\frac{1}{2}}, n^{\frac{1}{2}} + cn^{\frac{1}{4}})$.
 -/
-@[category research solved, AMS 11]
+@[category research solved, AMS 11, formal_proof using lean4 at "https://github.com/thepriceisright/erdos-agent/blob/fb2ccc39f7bfe67d328937bca4b1ee928eef50aa/docs/evidence/erdos887-rosenfeld-infinite-formalization.lean"]
 theorem erdos_887.variants.rosenfeld_infinite : ∃ C > (0 : ℝ),
     Infinite {n : ℕ | 4 ≤ #{ d ∈ Ioo ⌊√n⌋₊ ⌈√n + C * n^((1 : ℝ) / 4)⌉₊ | d ∣ n }} := by
   sorry
